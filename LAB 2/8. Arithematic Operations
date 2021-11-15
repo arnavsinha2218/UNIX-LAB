@@ -1,0 +1,34 @@
+#!/bin/sh
+echo "1. ADD"
+echo "2. SUB"
+echo "3. MUL"
+echo "4. DIV"
+echo "Select your choice(1-4) "
+read choice
+if [ $choice -eq 1 ]
+then
+echo "Enter two numbers "
+read a b
+result=`expr "$a+$b" | bc`
+echo "Result: $result"
+elif [ $choice -eq 2 ]
+then
+echo "Enter two numbers "
+read a b
+result=`expr "$a-$b" | bc`
+echo "Result: $result"
+elif [ $choice -eq 3 ]
+then
+echo "Enter two numbers "
+read a b
+result=`expr "$a*$b" | bc`
+echo "Result: $result"
+elif [ $choice -eq 4 ] 
+then
+echo "Enter two numbers "
+read a b
+result=`expr "$a/$b" | bc`
+echo "Result: $result"
+else
+echo "Wrong choice"
+fi

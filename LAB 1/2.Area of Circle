@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Enter the radius"
+read radius
+echo "Area of the circle"
+pi=3.1415
+ans=`echo $pi\$radius\$radius |bc`
+echo $ans

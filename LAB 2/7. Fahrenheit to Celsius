@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Enter the temp in fahrenheit "
+read fahrenheit
+celsius=`expr "($fahrenheit-32)/1.8" | bc`
+echo " $fahrenheit F is equal to $celsius C "

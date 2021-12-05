@@ -1,0 +1,8 @@
+for i in 123
+ do for i in 123
+   do for i in 123
+      do
+         echo $i$j$k
+       done
+     done
+   done   

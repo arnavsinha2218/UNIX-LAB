@@ -5,4 +5,4 @@ for ((i=0 ; i<$n ; i=i+2))
   do
   sum=$((sum+i))
   done
-echo "The sum of even numbers is $ even"
+echo "The sum of even numbers is $even"
